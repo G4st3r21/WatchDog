@@ -1,0 +1,96 @@
+body {
+    background-color: #000;
+    color: #000;
+}
+
+section {
+    margin: 40px auto;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    color: #fff;
+    flex: 1;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+.title:hover {
+    color: #fff;
+}
+
+.col-md-4 {
+    height: 800px;
+    overflow-y: scroll;
+}
+
+.card {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.card:hover {
+    background-color: #f8f9fa;
+}
+
+.card-details {
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    padding: 10px;
+    border-left: 1px solid #ddd;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-body {
+        width: 100%;
+        padding: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+.header {
+    margin: 0;
+}
+
+
+.fast_settings .container-fluid {
+    color: white;
+
+    height: 40px;
+    width: 500px;
+    margin-left: 0;
+
+}
+
+.card {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card.appear {
+  opacity: 1;
+}
+
+#packet-count {
+    color: white;
+}
